@@ -43,6 +43,15 @@
           <div class="header">
             <div class="header__logo"><a class="logotype" href="index.html"><img class="logotype__img" src="static/img/general/logo-black.png" alt="logo"/></a>
             </div>
+            <div class="header__burger">
+              <button class="menu" type="button" name="menu">
+                <svg viewBox="0 0 64 48">
+                  <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                  <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                  <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg>
+              </button>
+            </div>
             <div class="header__menu"><a href="#">Specialists</a><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Testimonials</a><a class="login" href="#">Login →</a></div>
           </div>
         </div>
@@ -52,7 +61,7 @@
           <div class="container">
             <div class="welcome">
               <div class="welcome__info">
-                <h2>Ask doctor, get answer in 24 hours for $9.99</h2>
+                <h2>Ask doctor, get answer in<b>24 hours</b><br>for<b>$9.99</b></h2>
                 <div class="welcome__icons">
                   <div class="welcome__cell">
                     <svg class="icon icon-shield ">
@@ -74,19 +83,47 @@
                   </div>
                 </div>
               </div>
-              <div class="welcome__form">
-                <div class="welcome__up-form">
-                  <input type="text" name="question" placeholder="Add a relevant title">
+              <div class="welcome__form step_js">
+                <div class="welcome__up-form"><span>Relevant title</span>
+                  <input type="text" name="question" placeholder="Add a relevant title"><span class="area">Describe your problem</span>
                   <textarea name="text" placeholder="Write your question here, and describe in detail"></textarea>
                 </div>
                 <div class="welcome__down-form">
-                  <div class="welcome__add-photo">
-                    <svg class="icon icon-clip ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#clip"></use>
-                    </svg><a href="#">Attach photo</a>
-                  </div>
+                  <div class="welcome__add-photo"><a href="#">
+                      <svg class="icon icon-clip ">
+                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#clip"></use>
+                      </svg>
+                      <p>Attach</p>
+                      <p>photo</p></a></div>
                   <div class="welcome__button">
-                    <button class="btn_ask" type="button" name="ask">Ask a doctor</button>
+                    <button class="btn_ask step_js_next" type="button" name="ask">Ask a doctor</button>
+                  </div>
+                </div>
+              </div>
+              <div class="welcome__form-pay step_js">
+                <div class="welcome__email">
+                  <p>Fill your contact information</p><span>Email</span>
+                  <div class="gdpr__image">
+                    <!--source(srcset='static/img/' + link + '.webp', type='image/webp' class="" + parent + "__img")--><img class="gdpr__img" src="static/img//general/GDPR-pay.png" alt="img"/>
+                  </div>
+                  <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="welcome__card">
+                  <input class="card" type="text" name="card" placeholder="Card number"><span class="card">Card number</span>
+                  <input class="date" type="text" name="date" placeholder="Date"><span class="date">Date</span>
+                  <input class="cvv" type="text" name="cvv" placeholder="CVC"><span class="cvv">CVC</span>
+                </div>
+                <div class="welcome__back"><a class="step_js_prev" href="#">← Back to question</a>
+                  <button class="btn_pay step_js_next" type="button" name="pay">Pay $9.99</button>
+                </div>
+              </div>
+              <div class="welcome__form-thanks step_js">
+                <div class="welcome__thanks">
+                  <p class="bold">Thanks for your question!</p>
+                  <p>Our doctors are works on it.<br>We will sent you answer in 24 hours to</p><a href="email">John232@gmail.com</a>
+                  <div class="welcome__buttons">
+                    <button class="btn_wrong step_js_prev" type="button" name="ok">Email is wrong!</button>
+                    <button class="btn_gotit" type="button" name="ok">Ok, I got it</button>
                   </div>
                 </div>
               </div>
@@ -127,7 +164,7 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                  <div class="block">
+                  <div class="block last">
                     <div class="block__image">
                       <!--source(srcset='static/img/' + link + '.webp', type='image/webp' class="" + parent + "__img")--><img class="block__img" src="static/img/content/person03.png" alt="img"/>
                     </div>
@@ -172,7 +209,7 @@
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-12">
-                  <div class="block block2">
+                  <div class="block block2 last">
                     <div class="block2__image">
                       <!--source(srcset='static/img/' + link + '.webp', type='image/webp' class="" + parent + "__img")--><img class="block2__img" src="static/img/content/letter.png" alt="img"/>
                     </div>
@@ -278,7 +315,7 @@
             <div class="footer__logo"><a class="logotype" href="index.html"><img class="logotype__img" src="static/img/general/logo-white.png" alt="logo"/></a>
             </div>
             <div class="footer__menu"><a href="#">About us</a><a href="#">Contact us</a><a href="#">Become a doctor</a><a href="#">Terms of use</a><a href="#">Privacy policy</a></div>
-            <div class="gdpr">
+            <div class="footer__gdpr">
               <div class="footer__gdpr__image">
                 <!--source(srcset='static/img/' + link + '.webp', type='image/webp' class="" + parent + "__img")--><img class="footer__gdpr__img" src="static/img/general/GDPR.png" alt="img"/>
               </div>
