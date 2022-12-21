@@ -1,0 +1,16 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Peppling - Homepage'
+  - var pageClass = 'index-page'
+
+block content
+  - var welcomeInfo = ['WELCOME Ozzie84 in new project!', 'Nice day))']
+
+  include ../custom/index-home/welcome
+  include ../custom/index-home/physicians
+  include ../custom/index-home/howitworks
+  include ../custom/index-home/simplepricing
+  include ../custom/index-home/chooseus
+
+block script

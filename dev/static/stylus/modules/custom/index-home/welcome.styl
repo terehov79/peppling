@@ -1,0 +1,87 @@
+.welcome
+	width 100%
+	padding 100px 0
+	display flex
+	justify-content: space-between;
+	align-items: center;
+	&--wrap
+		width 100%
+		background-color #00FFBE;
+	&__info
+		max-width 450px
+		h2
+			font-style: italic;
+			font-weight: normal;
+			font-size: 50px;
+			line-height: 70px;
+			letter-spacing: -0.222222px;
+			color: #0E325B;
+			padding-bottom: 50px;
+	&__icons
+		width 100%
+		display flex
+		justify-content: space-between;
+		align-items: flex-start;
+	&__cell
+		max-width 100px
+		svg
+			size(28px)
+			fill #07988C;
+	&__form
+		margin-left: 50px;
+		box-shadow: 0px 0px 44px -5px rgba(0,0,0,0.72);
+		border-radius 10px
+	&__up-form
+		width 610px
+		height 250px
+		background-color: baseWhite;
+		border-radius: 10px 10px 0 0;
+		padding: 0 20px;
+		input, textarea
+			width 100%
+			border-top none
+			border-left none
+			border-right none
+			border-bottom 1px solid #AED1FB
+			padding 30px 0 20px 0
+			border-radius: 10px 10px 0 0;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 30px;
+			letter-spacing: -0.111111px;
+			color: #0E325B;
+			&::placeholder
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 20px;
+				color: #6C94C4;
+		textarea
+			height 65%
+			border none
+	&__down-form
+		width 610px
+		height 100px;
+		padding 0 20px
+		background-color: #0E325B;
+		border-radius: 0 0 10px 10px;
+		display flex
+		justify-content: space-between;
+		align-items: center;
+	&__add-photo
+		a
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 20px;
+			color: #6C94C4;
+			margin-left: 10px;
+			border-bottom 1px dotted #6C94C4
+		svg
+			size(25px, 15px)
+			fill #6C94C4;
+			transition transition
+			cursor: pointer;
+			&:hover
+				fill #00FFBE;

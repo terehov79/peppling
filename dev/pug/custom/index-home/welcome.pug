@@ -1,0 +1,31 @@
+.welcome--wrap
+  .container
+    .welcome
+      ._info
+        h2
+          | Ask doctor, get answer in 24 hours for $9.99
+        ._icons
+          ._cell
+            +icon('shield')
+            p
+              | Autorized healthcare professionals
+          ._cell
+            +icon('dollar')
+            p
+              | Best price
+          ._cell
+            +icon('stopwatch')
+            p
+              | Quick answer
+      ._form
+        ._up-form
+          input(type='text' name='question' placeholder='Add a relevant title')
+          textarea(name='text' placeholder='Write your question here, and describe in detail')
+        ._down-form
+          ._add-photo
+            +icon('clip')
+            a(href="#")
+              | Attach photo
+          ._button
+            button(type='button', name='ask').btn_ask
+              | Ask a doctor

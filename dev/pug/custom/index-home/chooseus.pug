@@ -1,0 +1,50 @@
+.chooseus--wrap
+  .container
+    .chooseus
+      h1
+        | Why people choose us?
+      .slider
+        .swiper-container
+          .swiper-wrapper
+            .swiper-slide
+              .slide
+                +img('content/coment01', 'png', 'slide')
+                ._form
+                  ._text
+                    p
+                      | ‟I use Peppling on a daily basis. From the alerts in my inbox to check for stories we’re quoted in, to building quality media lists and seeing what stories are being read by the reporters.‟
+                  ._name
+                    p
+                      | Emma Watson
+                    span
+                      | Journalist
+            .swiper-slide
+              .slide
+                +img('content/person00', 'png', 'slide')
+                ._form
+                  ._text
+                    p
+                      | ‟I use Peppling on a daily basis. From the alerts in my inbox to check for stories we’re quoted in, to building quality media lists and seeing what stories are being read by the reporters.‟
+                  ._name
+                    p
+                      | Emma Watson
+                    span
+                      | Journalist
+            .swiper-slide
+              .slide
+                +img('content/person01', 'png', 'slide')
+                ._form
+                  ._text
+                    p
+                      | ‟I use Peppling on a daily basis. From the alerts in my inbox to check for stories we’re quoted in, to building quality media lists and seeing what stories are being read by the reporters.‟
+                  ._name
+                    p
+                      | Emma Watson
+                    span
+                      | Journalist
+        .swiper_btn
+          button(type='button' name='prev').btn_prev
+            +icon('arrow')
+          button(type='button' name='next').btn_next
+            +icon('arrow')
+          .swiper-pagination

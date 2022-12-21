@@ -1,0 +1,49 @@
+.btn_ask
+	size(156px, 60px)
+	padding 15px
+	display flex
+	justify-content center
+	align-items center
+	border-radius 5px
+	text-transform uppercase
+	font-style: italic;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+	text-align: center;
+	letter-spacing: 0.333333px;
+	color: #004236;
+	border none
+	cursor pointer
+	background: linear-gradient(180deg, #00FFA9 4.35%, #05DC76 61.33%, #05D56D 79.38%, #08E180 98.16%);
+	transition()
+	&:active
+		transform translateY(3px) scale(0.98)
+
+.swiper_btn
+	position relative
+.btn_prev, .btn_next
+	padding: 0
+	position absolute
+	border none
+	background transparent
+	top 10px
+	svg
+		size(10px)
+		fill #0E325B
+.btn_prev
+	left 0
+.btn_next
+	right 0
+	transform scale(-1)
+
+.swiper-pagination
+	position absolute
+	top 10px
+	left 50%
+	transform translateX(-50%)
+.swiper-pagination-bullet-active
+	background-color #FFF
+.swiper-pagination-bullet
+	background-color #0E325B;
+	margin 0 5px
